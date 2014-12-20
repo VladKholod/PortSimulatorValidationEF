@@ -20,13 +20,13 @@ namespace PortSimulator.DataAccessLayer
             this.Configuration.LazyLoadingEnabled = true;
         }
 
-        public virtual DbSet<Captain> Captains { get; set; }
-        public virtual DbSet<Cargo> Cargos{ get; set; }
-        public virtual DbSet<CargoType> CargoTypes { get; set; }
-        public virtual DbSet<City> Cities{ get; set; }
-        public virtual DbSet<Port> Ports{ get; set; }
-        public virtual DbSet<Ship> Ships{ get; set; }
-        public virtual DbSet<Trip> Trips{ get; set; }
+        public DbSet<Captain> Captains { get; set; }
+        public DbSet<Cargo> Cargos{ get; set; }
+        public DbSet<CargoType> CargoTypes { get; set; }
+        public DbSet<City> Cities{ get; set; }
+        public DbSet<Port> Ports{ get; set; }
+        public DbSet<Ship> Ships{ get; set; }
+        public DbSet<Trip> Trips{ get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
